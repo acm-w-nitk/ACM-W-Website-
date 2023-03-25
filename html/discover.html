@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CDN Imports for Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Lobster+Two&family=Montserrat&family=Quicksand&family=Spirax&display=swap" rel="stylesheet">
     <!-- CDN Imports for CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -15,9 +16,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
     <link rel="stylesheet" href="../css/discover.css">
     <!-- CDN Imports for JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
     <!-- Browser Icons -->
 
@@ -42,12 +43,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- data tables -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>  
-    <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>  
+    <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>   -->
 
 			<!-- Google Analytics-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -80,7 +81,7 @@
             </div>
             <div class="searchbox">
                 <input type="search" name="q" id="searchbar" onkeyup="searching()" placeholder="Search">
-                <!-- <button class="searchbutton"><a href="#" class="search_icon"><i class="fas fa-search"></i></a></button> -->
+                <button class="searchbutton"><a href="#" class="search_icon"><i class="fas fa-search"></i></a></button>
             </div>
         </div>
     </div>
@@ -99,24 +100,24 @@
 
         <!--Space for block contents-->
 
-        <div id="contents">
-        
-        </div>
+        <div id="contents"></div>
 
+        <div class="itemandprevnext">
         <!--Text to show the number of items shown-->
 
-        <div id="itemsshowing">
-        </div>
-        
-        <!--Previous and next buttons-->
+            <div id="itemsshowing">
+            </div>
+            
+            <!--Previous and next buttons-->
 
-        <div id="prevnext">
-            <button id="prevbtn" hidden >Previous</button>
-            <button id="nextbtn">Next</button>
+            <div id="prevnext">
+                <button id="prevbtn" hidden >Previous</button>
+                <button id="nextbtn">Next</button>
+            </div>
         </div>
 
     </div>
-    <br>
+    <div class="space"></div>
     <div id="footer">
         @ACM all rights reserved
     </div>
