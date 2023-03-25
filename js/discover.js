@@ -29,22 +29,22 @@ function renderData(){
         let blocks = document.createElement('div');
         blocks.classList.add('blocks');
         blocks.innerHTML = `<div class="visible"><h4>${item.name}</h4>`
-        + `<p>${item.organiser}</p>`
-        +`<h4>${item.typeOfEvent}</h4>`
-        +`<p>${item.eligibility}</p></div>`
+        + `<h6>${item.organiser}</h6>`
+        +`<h5>${item.typeOfEvent}</h5>`
+        +`<p>Eligibility :  ${item.eligibility}</p></div>`
         +`<div class="popup">`
             +`<div class="popupHeader">`
                 +`<h4>${item.name}</h4>`
-                +`<button class="closePopup">X</button>`
+                +`<button class="closePopup">x</button>`
             +`</div>`
             +`<div class="popupBody">`
-                +`<p>Organiser:         ${item.organiser}</p>`
-                +`<p>Type of Event:     ${item.typeOfEvent}</p>`
-                +`<p>Eligibility:       ${item.eligibility}</p>`
-                +`<p>Rewards:           ${item.awardsPrizesBenefits}</p>`
-                +`<p>Application date:  ${item.applicationDate}</p>`
-                +`<p>Tags:       ${item.eventDomainTags}</p>`
-                +`<p>Description:       ${item.description}</p>`
+                +`<p><span>Organiser:</span>         ${item.organiser}</p>`
+                +`<p><span>Type of Event:</span>     ${item.typeOfEvent}</p>`
+                +`<p><span>Eligibility:</span>       ${item.eligibility}</p>`
+                +`<p><span>Rewards:</span>           ${item.awardsPrizesBenefits}</p>`
+                +`<p><span>Application date:</span>  ${item.applicationDate}</p>`
+                +`<p><span>Tags:</span>       ${item.eventDomainTags}</p>`
+                +`<p><span>Description:</span>       ${item.description}</p>`
                 +`<a href=${item.website}>Learn more >></a>`
             +`</div>`
             +`<div class="overlay"></div>`
