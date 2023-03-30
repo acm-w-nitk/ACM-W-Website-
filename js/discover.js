@@ -61,7 +61,6 @@ function renderData(){
       const close = item.querySelector('.closePopup'); 
       let isOpen = false;
 
-      console.log(popup, close, overlay);
     
     vis.addEventListener('click',()=>{
           if(!isOpen){
@@ -89,7 +88,8 @@ function renderData(){
 
     })
     const pageContainer = document.getElementById('itemsshowing');
-    pageContainer.innerHTML = `Showing ${startIndex+1} to ${endIndex} of ${dataToDisplay.length} items`;
+    if(endIndex == 0)pageContainer.innerHTML = `No items to be shown`;
+    else pageContainer.innerHTML = `Showing ${startIndex+1} to ${endIndex} of ${dataToDisplay.length} items`;
     
     prevbtn.hidden = currentPage === 1;
     nextbtn.hidden = currentPage === Math.ceil(dataToDisplay.length/itemsPerPage);
