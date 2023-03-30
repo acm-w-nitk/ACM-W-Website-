@@ -12,17 +12,18 @@ html body *{
 body{
   display: block;
   max-width : 100vw;
-  margin: 0;
+  margin: 0px;
   font-size: 16px;
   background-color: white;
-  padding: 0;
+  padding: 0px;
   overflow: hidden;
 }
 nav{
   background-color: white;
 }
+
 #discoveringopp{
-  font-family: 'Spirax', cursive;
+  font-family: 'Raleway', sans-serif;
   padding: 5%;
   height: 50%;
   background: linear-gradient(0deg, rgba(2,0,36,0.99) 50%, rgba(75,0,110,1) 90%);   
@@ -33,7 +34,8 @@ nav{
   width: 100%;
 }
 #title{
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
   font-size: 5rem;
   color: white;
   margin-bottom: 30px;
@@ -130,14 +132,14 @@ nav{
   background-color: rgba(2,0,36,0.99);
   display: grid;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
 
 }
 
 .blocks{
   display: block;
-  margin: 5%;
+  margin: 0%;
   width: 100%;
   padding: 5%;
   border: transparent;
@@ -151,7 +153,8 @@ nav{
 
 .visible > h4{
   text-align: center;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   margin:0%;
 }
@@ -207,6 +210,8 @@ nav{
 
 .popupHeader h4{
   font-family: 'El Messiri', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -218,11 +223,11 @@ nav{
   background:none;
   font-size: 2rem;
   font-weight: bold;
-  color: #02ccfecd;
+  color:  rgb(201, 130, 235);
 }
 .popupHeader > button:hover{
   border: transparent;
-  color: #02ccfe4b;
+  color:rgb(154, 16, 219);
 }
 
 
@@ -234,6 +239,8 @@ nav{
 
 .popupBody span{
   font-family: 'El Messiri', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   margin-right: 15px;
@@ -318,10 +325,16 @@ z-index: 2;
   background-color: #4B006E;
 }
 
+@media(max-width : 620px){
+  #title{
+      font-size: 4rem;
+  }
+}
+
+
 @media(max-width : 575.98px){
   #title{
-      font-family: 'El Messiri', sans-serif;
-      font-size: 4.2em;
+      font-size: 3.5rem;
       color: white;
       margin-bottom: 30px;
   }
@@ -363,5 +376,43 @@ z-index: 2;
   }
   #nextbtn{
       margin-right: 0px;
+  }
+}
+
+@media(max-width : 460px){
+
+  #title{
+
+      font-size: 3rem;
+  }
+  .searchbox{
+    width: 300px;
+  }
+}
+
+@media(max-width : 390px){
+  #discoveringopp{
+    height: 50vh;
+    align-items: center;
+  }
+  #title{
+      margin-top: 20%;
+      text-align: center;
+      font-size: 2.5rem;
+  }
+  .search{
+    margin-top: 20%;
+  }
+  .searchbox{
+    width: 250px;
+  }
+  .popupBody{
+    padding: 5px 10px;
+  }
+}
+
+@media(max-width : 330px){
+  #title{
+      font-size: 2rem;
   }
 }
