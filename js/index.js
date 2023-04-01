@@ -51,7 +51,7 @@ anime.timeline({loop: true})
 })(jQuery); // end jQuer
 
 
-/*
+
 
   .add({
     targets: '.ml3 .letter',
@@ -91,9 +91,5 @@ anime.timeline({loop: true})
   })(jQuery); // end jQuer
 
 
-  /*
->>>>>>> f4a6a598516d3895bb559c82720eb7e364e78d49
-Background Gradients From --
-https://uigradients.com
-*/
+
 
